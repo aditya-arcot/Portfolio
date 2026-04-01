@@ -66,7 +66,7 @@ jobs:
                   find stage -type f
 
             - name: log in to docker registry
-              uses: docker/login-action@v3
+              uses: docker/login-action@v4
               with:
                   registry: ${{ secrets.DOCKER_REGISTRY }}
                   username: ${{ secrets.DOCKER_REGISTRY_USERNAME }}
